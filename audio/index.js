@@ -44,7 +44,7 @@ class MedaAudio extends AudioProvider {
             if(!flags.includes('silent')) this.send(`**<:yes:582718257807622154> Finished The Queue.**`, this.embed, message);
             return this.leave(message.guild.id)
         } catch (error) {
-            message.channel.send(this.embed.message(`\`\`\`js\n${error}\`\`\``, { url: "https://discord.gg/wMsK7cN", title: "Support Server" }));
+            message.channel.send(this.embed.message(`\`\`\`js\n${error}\`\`\``, { url: "https://discord.gg/sBpWZva", title: "Support Server" }));
             return this.log.error(error);
         };
     };
@@ -61,7 +61,7 @@ class MedaAudio extends AudioProvider {
             };
             return result;
         } catch (error) {
-            message.channel.send(this.embed.message(`\`\`\`js\n${error}\`\`\``, { url: "https://discord.gg/wMsK7cN", title: "Support Server" }));
+            message.channel.send(this.embed.message(`\`\`\`js\n${error}\`\`\``, { url: "https://discord.gg/sBpWZva", title: "Support Server" }));
             return this.log.error(error);
         }
 	}
@@ -109,7 +109,7 @@ class MedaAudio extends AudioProvider {
                 return
             };
         } catch (error) {
-            message.channel.send(this.embed.message(`\`\`\`js\n${error}\`\`\``, { url: "https://discord.gg/wMsK7cN", title: "Support Server" }));
+            message.channel.send(this.embed.message(`\`\`\`js\n${error}\`\`\``, { url: "https://discord.gg/sBpWZva", title: "Support Server" }));
             return this.log.error(error);
         }
     };
@@ -138,7 +138,7 @@ class MedaAudio extends AudioProvider {
             });
             return message.channel.send(this.embed.message(this.lang.get('commands.music.playing_track').format([player.current.title])).setThumbnail(player.current.thumbnail));
         } catch (error) {
-            message.channel.send(this.embed.message(`\`\`\`js\n${error}\`\`\``, { url: "https://discord.gg/wMsK7cN", title: "Support Server" }));
+            message.channel.send(this.embed.message(`\`\`\`js\n${error}\`\`\``, { url: "https://discord.gg/sBpWZva", title: "Support Server" }));
             return this.log.error(error);
         };
     }
