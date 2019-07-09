@@ -33,7 +33,7 @@ class MedaAudio extends AudioProvider {
             player.volume(await this.client.db.getGuild(guild.id, 'defvolume'));
             return player;
         } catch (error) {
-            channel.send(this.embed.message(`\`\`\`js\n${error}\`\`\``, { url: "https://discord.gg/wMsK7cN", title: "Support Server" }));
+            channel.send(this.embed.message(`\`\`\`js\n${error}\`\`\``, { url: "https://discord.gg/sBpWZva", title: "Support Server" }));
             return this.log.error(error);
         };
     };
